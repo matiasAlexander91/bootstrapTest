@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .collapse{
     display: flex;
@@ -10,21 +11,35 @@
     font-size: 30px;
 }
 .navbar-nav .nav-item    {
-    padding: 10%;
+    padding: 5%;
+}
+.fondo img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 .container-fluid {
     background-size: contain;
-    padding-left: 0;
+    padding-left: 0;    
 }
-.container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
+.carousel {
+    background-color: black;
 }
-.col {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: green;
+.carousel-item img {
+    width: auto;
+    height: 600px;
+    border-radius: 100px;
+    object-fit: contain;    
+}
+.footer {
+    min-height: 200px;
+    height: calc(100vh - 791px);
+    max-height: 400px;
+    width: 100vw;
+}
+.logo {
+    max-height: 100vh;
+}
+.logo a img{
+    width: 359px;
 }
