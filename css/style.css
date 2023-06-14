@@ -83,6 +83,8 @@
     font-size: 30px;
     letter-spacing: 2px;
     width: 800px;
+    overflow: hidden;
+    height: auto;
 }
 .staffMember img {
     height: 200px;
@@ -102,9 +104,12 @@
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-image: url(../images/background.jpg);
     background-size:cover;
+}
+.mainKnownUs {
+    align-items: flex-start;
 }
 .knowTittle {
   width: 100%;
