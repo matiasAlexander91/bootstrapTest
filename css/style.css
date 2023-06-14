@@ -98,10 +98,13 @@
     font-size: 50px;
     justify-content: center;
 }
-.mainId{
+.mainId, .mainTours{
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-around;
+    align-items: flex-start;
+    background-image: url(../images/background.jpg);
+    background-size:cover;
 }
 .knowTittle {
   width: 100%;
