@@ -22,6 +22,38 @@
   justify-content: center;
 }
 
+.formReview {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  font-size: 30px;
+  color: white;
+}
+.formReview .mainReview input {
+  font-size: 25px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+}
+.formReview .contReview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formReview .contReview textarea {
+  font-size: 18px;
+  padding: 5px;
+  resize: none;
+}
+.formReview .formReview select {
+  font-size: 20px;
+  padding: 10px;
+}
+.formReview .mainReview button {
+  font-size: 25px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
 .mainTours {
   display: flex;
   justify-content: center;
@@ -40,80 +72,13 @@
   padding: 50px 35px;
   transform: translateY(-200px);
 }
-
-.titleTitle {
+.boxTitle .titleTitle {
   color: white;
   font-size: 70px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-.titleTitle:hover {
+.boxTitle .titleTitle:hover {
   color: red;
-}
-
-.formReview {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 50px;
-  font-size: 30px;
-  color: white;
-}
-
-.mainReview input {
-  font-size: 25px;
-  padding: 5px;
-  letter-spacing: 0.5px;
-}
-
-.contReview {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contReview textarea {
-  font-size: 18px;
-  padding: 5px;
-  resize: none;
-}
-
-.formReview select {
-  font-size: 20px;
-  padding: 10px;
-}
-
-.mainReview button {
-  font-size: 25px;
-  padding: 5px;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-
-.staffMember {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  color: wheat;
-  font-size: 30px;
-  letter-spacing: 2px;
-  width: 800px;
-  overflow: hidden;
-  height: auto;
-}
-
-.staffMember img {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-}
-
-.staffMember p {
-  padding: 20px;
-}
-
-.knowTittle {
-  display: flex;
-  color: rebeccapurple;
-  font-size: 50px;
-  justify-content: center;
 }
 
 .mainId, .mainTours {
@@ -130,7 +95,30 @@
 }
 
 .knowTittle {
+  display: flex;
+  color: rebeccapurple;
+  font-size: 50px;
+  justify-content: center;
   width: 100%;
+}
+
+.staffMember {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  color: wheat;
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 800px;
+  overflow: hidden;
+  height: auto;
+}
+.staffMember img {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+}
+.staffMember p {
+  padding: 20px;
 }
 
 .divTour {
@@ -143,24 +131,6 @@
   height: 400px;
   border: solid 5px aquamarine;
   flex-direction: column;
-}
-
-.spanTour {
-  display: flex;
-  overflow: hidden;
-}
-
-.divTour img {
-  height: 400px;
-  width: 400px;
-  padding: 20px;
-  background-size: cover;
-}
-
-.textTour {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 20px;
 }
 
 .buttonBuy {
@@ -184,6 +154,22 @@
 
 .buttonBuy button:hover {
   color: red;
+}
+
+.spanTour {
+  display: flex;
+  overflow: hidden;
+}
+.spanTour img {
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  background-size: cover;
+}
+.spanTour .textTour {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
 }
 
 .collapse {
@@ -308,6 +294,7 @@
     transform: translateY(-100px);
   }
   .boxTitle .titleTitle {
+    margin-top: 0;
     font-size: 32px;
   }
   .divTour {
