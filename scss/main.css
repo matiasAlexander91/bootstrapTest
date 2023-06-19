@@ -37,7 +37,7 @@
 .boxTitle {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  padding: 50px;
+  padding: 50px 35px;
   transform: translateY(-200px);
 }
 
@@ -142,12 +142,12 @@
   width: 800px;
   height: 400px;
   border: solid 5px aquamarine;
+  flex-direction: column;
 }
 
-.divTour button {
-  width: 60px;
-  height: 40px;
-  justify-content: flex-end;
+.spanTour {
+  display: flex;
+  overflow: hidden;
 }
 
 .divTour img {
@@ -172,13 +172,14 @@
 
 .buttonBuy button {
   border-radius: 100px;
-  height: 50%;
+  height: 70px;
   width: auto;
   font-size: 20px;
   color: darkgreen;
   font-weight: 700;
   cursor: pointer;
   padding: 20px;
+  margin: 10px;
 }
 
 .buttonBuy button:hover {
@@ -232,14 +233,16 @@
 
 .carousel {
   background-color: black;
+  height: 80vh;
 }
 
 .carousel-item img {
-  width: auto;
-  height: 600px;
+  width: 75vw !important;
   border-radius: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+  height: 75vh;
+  margin: 30px auto;
 }
 
 .logo {
@@ -300,5 +303,51 @@
   }
   .footerRight {
     margin-top: 10px;
+  }
+  .boxTitle {
+    transform: translateY(-100px);
+  }
+  .boxTitle .titleTitle {
+    font-size: 32px;
+  }
+  .divTour {
+    font-size: 12px;
+  }
+  .spanTour {
+    flex-direction: column;
+    align-items: center;
+  }
+  .divTour img {
+    height: 50%;
+    width: 50%;
+  }
+  .staffMember {
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .staffMember img {
+    margin: auto;
+  }
+  .formReview {
+    transform: translateY(-180px);
+    padding: 0;
+    font-size: 15px;
+    margin: 5px;
+  }
+  .formReview input {
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .formReview textarea {
+    height: 100px;
+    width: 80%;
+  }
+  .formReview .submit {
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .formReview select {
+    margin-left: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
